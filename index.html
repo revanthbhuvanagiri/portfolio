@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="hero-section text-white py-20">
+    <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto text-center">
+            <h1 class="text-4xl font-bold mb-4">AI Engineer & Developer</h1>
+            <p class="text-xl mb-8">Turning Ideas into Intelligent Solutions</p>
+            <a href="{{ url_for('projects') }}" 
+               class="inline-block bg-white text-purple-600 px-8 py-4 rounded-full font-semibold 
+                      hover:bg-gray-100 hover:scale-105 transform transition duration-300 
+                      shadow-lg hover:shadow-xl">
+                View My Work
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container mx-auto px-4 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+            <i class="fas fa-brain text-4xl text-purple-600 mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">AI Development</h3>
+            <p class="text-gray-600">Specialized in developing AI solutions and machine learning models</p>
+        </div>
+        <div class="text-center">
+            <i class="fas fa-code text-4xl text-purple-600 mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Full Stack Development</h3>
+            <p class="text-gray-600">Creating end-to-end web applications with modern technologies</p>
+        </div>
+        <div class="text-center">
+            <i class="fas fa-robot text-4xl text-purple-600 mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Gen AI Solutions</h3>
+            <p class="text-gray-600">Building next-generation AI applications</p>
+        </div>
+    </div>
+</div>
+{% endblock %} 
